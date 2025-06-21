@@ -1,38 +1,5 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-*.pyc
-
-# Django
-db.sqlite3
-*.sqlite3
-*.log
-
-# Environment
+# Ignore sensitive files
 .env
 *.env
-venv/
-env/
-ENV/
-.venv/
-.idea/
-.vscode/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Migrations
-*/migrations/__pycache__/
-*/migrations/*.pyc
-
-# Coverage reports
-htmlcov/
-.coverage
-.tox/
-.cache/
-nosetests.xml
-coverage.xml
-
+secrets.json
+config/settings_local.py
