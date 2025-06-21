@@ -1,5 +1,4 @@
-   
- {% extends "website/index.html" %} 
+{% extends "website/index.html" %} 
    {% load static %}
   {% block title %}
  | Portfolio
@@ -7,7 +6,7 @@
   
  {% block link %}
 
-  <link rel="stylesheet" href="{% static 'profileportfolio/style.css' %}" />
+  {% comment %} <link rel="stylesheet" href="{% static 'profileportfolio/style.css' %}"> {% endcomment %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">

@@ -4,14 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}
-    
-    {% endblock  %}</title>
-    <link rel="stylesheet" href="{% static "style.css" %}">
+    <title>{% block title %}{% endblock  %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     {% block link %}
-    css style link 
-    
-    {% endblock  %}
+    link   
+    {% endblock %}
 </head>
 <body>
     {% block nav %}
