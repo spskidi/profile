@@ -1,0 +1,151 @@
+ {% extends "website/index.html" %} 
+  {% load static %}
+  {% block title %}
+ | Portfolio
+  {% endblock  %}
+  
+ {% block link %}
+
+  <link rel="stylesheet" href= {% static "profileportfolio/style.css" %} />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+ {% endblock  %}
+ 
+
+{% block nav %}
+  <nav>
+    <div class="logo"> </div>
+    <ul>
+      <li><a href="" class="active">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+{% endblock  %}
+
+
+{% block home %}
+ <section id="home">
+    <div class="home-img">
+      <img src="Home.png" alt=" Portrait" />
+    </div>
+    <div class="home-text">
+      <h1>Hi, It's <span>{{name}}</span></h1>
+      <h2>I'm a <span>Web Developer</span>|</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Voluptates placeat atque est!</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <a href="#contact" class="hire-btn">Hire Me</a>
+    </div>
+  </section>
+{% endblock  %}
+
+
+
+
+{% block skill  %}
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box"><img src="Skill.png" alt="Angular" /><p>Angular</p></div>
+      <div class="skill-box"><img src="Skill.png" alt="React" /><p>React Js</p></div>
+      <div class="skill-box"><img src="Skill.png" alt="Angular" /><p>Angular</p></div>
+      <div class="skill-box"><img src="Skill.png" alt="React" /><p>React Js</p></div>
+      <div class="skill-box"><img src="Skill.png" alt="Angular" /><p>Angular</p></div>
+      <div class="skill-box"><img src="Skill.png" alt="React" /><p>React Js</p></div>
+      <div class="skill-box"><img src="Skill.png" alt="Angular" /><p>Angular</p></div>
+      <div class="skill-box"><img src="Skill.png" alt="React" /><p>React Js</p></div>
+      <div class="skill-box"><img src="Skill.png" alt="Angular" /><p>Angular</p></div>
+      <div class="skill-box"><img src="Skill.png" alt="React" /><p>React Js</p></div>
+    </div>
+  </section>
+{% endblock  %}
+  
+
+
+
+{% block education %}
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item left" data-year="2020">
+        <h3>High School</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      </div>
+      <div class="timeline-item right" data-year="2021">
+        <h3>University</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      </div>
+      <div class="timeline-item left" data-year="2025">
+        <h3>Internship</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      </div>
+    </div>
+  </section>
+{% endblock education %}
+
+
+
+{% block service %}
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="service-box"><h3>Python Developer</h3><p>Lorem ipsum dolor sit amet...</p></div>
+      <div class="service-box"><h3>Web Development</h3><p>Lorem ipsum dolor sit amet...</p></div>
+      <div class="service-box"><h3>App Development</h3><p>Lorem ipsum dolor sit amet...</p></div>
+      <div class="service-box"><h3>Game Development</h3><p>Lorem ipsum dolor sit amet...</p></div>
+      <div class="service-box"><h3>Software Development</h3><p>Lorem ipsum dolor sit amet...</p></div>
+      <div class="service-box"><h3>ISO Developer</h3><p>Lorem ipsum dolor sit amet...</p></div>
+    </div>
+  </section>
+
+{% endblock service %}
+
+
+
+
+{% block contact %}
+  <section id="contact">
+    <h2>Contact <span style="color:#d23f57">Me</span></h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="Phone Number" />
+      <input type="text" placeholder="Subject" />
+      <textarea rows="6" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+{% endblock contact %}
+
+
+
+{% block footer %}
+<footer>
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <ul>
+      <li><a href="#">FQA</a></li>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+    <p>&copy; SortedCoding.com All rights reserved. Licensed</p>
+  </footer>
+{% endblock footer %}
+ 

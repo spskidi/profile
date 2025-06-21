@@ -1,0 +1,52 @@
+{% comment %} {% load static %} {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}
+    
+    {% endblock  %}</title>
+    {% comment %} <link rel="stylesheet" href="{% static "style.css" %}"> {% endcomment %}
+    {% block link %}
+    css style link 
+    
+    {% endblock  %}
+</head>
+<body>
+    {% block nav %}
+    nav bar 
+    {% endblock  %}
+
+    {% block home %}
+    home section 
+    {% endblock  %}
+
+    {% block skill %}
+    skill section
+    
+    {% endblock  %}
+
+    {% block education %}
+    education section
+    {% endblock  %}
+
+    {% block service %}
+    service section
+    
+    {% endblock service %}
+
+    {% block contact %}
+    contact section
+    
+    {% endblock contact %}
+ 
+    {% block footer %}
+    footer section
+    
+    {% endblock footer %}
+
+    
+    
+</body>
+</html>
