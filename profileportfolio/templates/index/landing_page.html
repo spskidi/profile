@@ -1,12 +1,12 @@
- {% extends "website/index.html" %} 
-  {% load static %}
+{% extends "website/index.html" %} 
+   {% load static %}
   {% block title %}
  | Portfolio
   {% endblock  %}
   
  {% block link %}
 
-  <link rel="stylesheet" href= {% static "profileportfolio/style.css" %} />
+  <link rel="stylesheet" href="{% static 'profileportfolio/style.css' %}" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
 {% block home %}
  <section id="home">
     <div class="home-img">
-      <img src="Home.png" alt=" Portrait" />
+      <img src="{% static 'profileportfolio/p1.jpg' %}" alt=" Portrait" />
     </div>
     <div class="home-text">
       <h1>Hi, It's <span>{{name}}</span></h1>
@@ -56,16 +56,16 @@
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <div class="skill-box"><img src="Skill.png" alt="Angular" /><p>Angular</p></div>
-      <div class="skill-box"><img src="Skill.png" alt="React" /><p>React Js</p></div>
-      <div class="skill-box"><img src="Skill.png" alt="Angular" /><p>Angular</p></div>
-      <div class="skill-box"><img src="Skill.png" alt="React" /><p>React Js</p></div>
-      <div class="skill-box"><img src="Skill.png" alt="Angular" /><p>Angular</p></div>
-      <div class="skill-box"><img src="Skill.png" alt="React" /><p>React Js</p></div>
-      <div class="skill-box"><img src="Skill.png" alt="Angular" /><p>Angular</p></div>
-      <div class="skill-box"><img src="Skill.png" alt="React" /><p>React Js</p></div>
-      <div class="skill-box"><img src="Skill.png" alt="Angular" /><p>Angular</p></div>
-      <div class="skill-box"><img src="Skill.png" alt="React" /><p>React Js</p></div>
+      <div class="skill-box"><img src="{% static 'profileportfolio/p1.jpg' %}" alt="Angular" /><p>Angular</p></div>
+      <div class="skill-box"><img src="{% static 'profileportfolio/p1.jpg' %}" alt="React" /><p>React Js</p></div>
+      <div class="skill-box"><img src="{% static 'profileportfolio/p1.jpg' %}" alt="Angular" /><p>Angular</p></div>
+      <div class="skill-box"><img src="{% static 'profileportfolio/p1.jpg' %}" alt="React" /><p>React Js</p></div>
+      <div class="skill-box"><img src="{% static 'profileportfolio/p1.jpg' %}" alt="Angular" /><p>Angular</p></div>
+      <div class="skill-box"><img src="{% static 'profileportfolio/p1.jpg' %}" alt="React" /><p>React Js</p></div>
+      <div class="skill-box"><img src="{% static 'profileportfolio/p1.jpg' %}" alt="Angular" /><p>Angular</p></div>
+      <div class="skill-box"><img src="{% static 'profileportfolio/p1.jpg' %}" alt="React" /><p>React Js</p></div>
+      <div class="skill-box"><img src="{% static 'profileportfolio/p1.jpg' %}" alt="Angular" /><p>Angular</p></div>
+      <div class="skill-box"><img src="{% static 'profileportfolio/p1.jpg' %}" alt="React" /><p>React Js</p></div>
     </div>
   </section>
 {% endblock  %}
@@ -148,4 +148,3 @@
     <p>&copy; SortedCoding.com All rights reserved. Licensed</p>
   </footer>
 {% endblock footer %}
- 
