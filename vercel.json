@@ -2,20 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "portfolio/wsgi.py",
-      "use": "@vercel/python",
-      "config": { "maxLambdaSize": "50mb", "runtime": "python3.11" }
+      "src": "build_files.sh",
+      "use": "@vercel/static-build"
     }
   ],
-  "buildCommand": "bash build_files.sh",
   "routes": [
     {
-      "src": "/static/(.*)",
-      "dest": "static/$1"
-    },
-    {
       "src": "/(.*)",
-      "dest": "portfolio/wsgi.py"
+      "dest": "gunicorn_handler.py"
     }
   ]
 }
