@@ -36,7 +36,3 @@ htmlcov/
 nosetests.xml
 coverage.xml
 
-# Static files
-staticfiles/
-static/
-media/
