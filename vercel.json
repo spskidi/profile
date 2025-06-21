@@ -4,7 +4,17 @@
     {
       "src": "profileportfolio/wsgi.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "50mb" }
+      "config": { "maxLambdaSize": "50mb" ,
+         "runtime": "python3.11"
+        }
+    },
+    {
+        "src": "build_files.sh",
+        "use": "@vercel/static-build",
+        "config": {
+            "distDir": "staticfiles_build"
+           
+        }
     }
   ],
   "buildCommand": "bash build_files.sh",
